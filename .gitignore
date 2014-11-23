@@ -1,0 +1,4 @@
+# IntelliJ
+.idea/
+target/
+javaee7-example.iml
