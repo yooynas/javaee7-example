@@ -17,7 +17,7 @@ import java.util.List;
  * Example of Rest resource with CDI.
  */
 @Path("example")
-@Stateless                  // for injecting EJB beans ("SimpleSingleton")
+@Stateless
 public class RestResource {
 
     @Inject
