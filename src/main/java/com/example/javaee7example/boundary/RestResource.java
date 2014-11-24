@@ -5,6 +5,7 @@ import com.example.javaee7example.control.SimplePojo;
 import com.example.javaee7example.control.SimpleSingleton;
 import org.apache.log4j.Logger;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,6 +17,7 @@ import java.util.List;
  * Example of Rest resource with CDI.
  */
 @Path("example")
+@Stateless                  // for injecting EJB beans ("SimpleSingleton")
 public class RestResource {
 
     @Inject
